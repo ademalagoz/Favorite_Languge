@@ -1,4 +1,5 @@
 # Getting Started with Create React App
+1-veride false,null vardi.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
