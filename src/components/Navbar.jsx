@@ -8,13 +8,12 @@ import {
   Toolbar,
   IconButton,
   Menu,
-  ButtonGroup,
   Container,
   MenuItem,
 } from "@mui/material";
 
 import MenuIcon from "@mui/icons-material/Menu";
-import ElectricBoltRoundedIcon from "@mui/icons-material/ElectricBoltRounded";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import gitHubLogo from "../assets/octocat.png";
 
 const Navbar = () => {
@@ -31,10 +30,6 @@ const Navbar = () => {
 
   const handleOpen = () => {
     setOpen(true);
-  };
-
-  const handleHost = (e) => {
-    e.preventDefault();
   };
 
   return (
@@ -65,7 +60,12 @@ const Navbar = () => {
             </Link>
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "flex" } }}>
-            <ElectricBoltRoundedIcon sx={{ color: "red" }} />
+            <GitHubIcon
+              sx={{
+                mr: 1,
+                color: "black",
+              }}
+            />
             <Link
               variant="h5"
               href="/"
@@ -76,34 +76,43 @@ const Navbar = () => {
             </Link>
           </Box>
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
-            <ButtonGroup>
-              <Button
-                variant="h5"
-                href="/"
-                underline="none"
-                onClick={handleHost}
-                sx={{
-                  color: "yellow",
-                  fontFamily: "monospace",
-                  fontWeight: 700,
-                }}
-              >
-                About
-              </Button>
-              <Button
-                variant="h5"
-                href="/"
-                underline="none"
-                onClick={handleOpen}
-                sx={{
-                  color: "yellow",
-                  fontFamily: "monospace",
-                  fontWeight: 700,
-                }}
-              >
-                Contact
-              </Button>
-            </ButtonGroup>
+            <Button
+              href="/blog"
+              onClick={handleOpen}
+              underline="none"
+              sx={{
+                color: "yellow",
+                fontFamily: "monospace",
+                fontWeight: 700,
+              }}
+            >
+              Blog
+            </Button>
+
+            <Button
+              href="/about"
+              onClick={handleOpen}
+              underline="none"
+              sx={{
+                color: "yellow",
+                fontFamily: "monospace",
+                fontWeight: 700,
+              }}
+            >
+              About
+            </Button>
+            <Button
+              href="/contact"
+              underline="none"
+              onClick={handleOpen}
+              sx={{
+                color: "yellow",
+                fontFamily: "monospace",
+                fontWeight: 700,
+              }}
+            >
+              Contact
+            </Button>
           </Box>
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -138,10 +147,23 @@ const Navbar = () => {
                 onClick={handleCloseNavMenu}
                 sx={{ display: "flex", flexDirection: "column", color: "red" }}
               >
-                <Button color="secondary" variant="text" onClick={handleHost}>
+                <Button
+                  href="/blog"
+                  color="secondary"
+                  variant="text"
+                  onClick={handleOpen}
+                >
+                  <Typography textAlign="center">Blog</Typography>
+                </Button>
+                <Button
+                  href="/about"
+                  color="secondary"
+                  variant="text"
+                  onClick={handleOpen}
+                >
                   <Typography textAlign="center">About</Typography>
                 </Button>
-                <Button color="secondary" onClick={handleOpen}>
+                <Button href="/contact" color="secondary" onClick={handleOpen}>
                   <Typography textAlign="center">Contact</Typography>
                 </Button>
               </MenuItem>

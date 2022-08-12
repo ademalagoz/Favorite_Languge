@@ -1,71 +1,58 @@
-# Getting Started with Create React App
-1-veride false,null vardi.
+# About Programme
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This application finds any Github user’s favourite programming language.
+Once you type any Github username, you are able to see what the favourite programming language is, the Github user's profile photo, total repositories and user's Github link.
 
-## Available Scripts
+# **Technologies**
 
-In the project directory, you can run:
+- Language: JavaScript
+- Front-End Framework: React
+- Testing: Testing-library/react and Jest
+- Styling and Structure: Material UI
+- Version Control: Git/Github
+- Deployment: Netlify
 
-### `npm start`
+# **Tasks**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Create Home, Search, Navbar, Footer components and Routes for other pages in React.
+- Fetch data from API using asynchronous function to fetch and filter the data.
+- Create a callback function in order to find the all languages with using array methods (map.(), reduce.().
+- Create a callback function in order to find out the most favourite languages used Object.keys() and array method reduce().
+- Use React Hooks useState to store data and props for transferring.
+- Finally, get the favourite language and more details.
+- Write a test for any error.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# **Challenges**
 
-### `npm test`
+- In most cases, the majority of Github users’ have repositories and different kinds of languages. We should find a way to catch them.
+- However, in some cases, some of the users have “no repository”, and some of them have “null” language names in their repository.
+- Also, sometimes clients who will be able to use this application can type random characters to this input area and Github users may not exist.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# **Solution**
 
-### `npm run build`
+- In this task we used `https://api.github.com/users/${user}/repos?per_page=100` api for fetching.
+- Created a handleSubmit function to use our using with Async/Await fetching api, filtering and getting the solution.
+  -When an event is triggered we used e.preventDefault(), to prevent default actions of browsers.
+- We need to think about some delays when we fetch the api and created a loading component for the latency.
+- Created a callback function in order to find all languages using array methods (map.(), reduce.().
+- Created a callback function in order to find out the most favourite languages used Object.keys() and array method reduce().
+- Used React Hooks useState to store data and props for transferring.
+- Finally, get the favourite language and more details.
+- Also we get and showed the avatar, total repository and Github link of that user.
+  -We wrote a test for any error. Tested in different stories with using Testing-library/react and Jest ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## **Extra**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Navbar, Footer, logo and different pages added.
+- This app is created as Full Responsive by using MUI library.
+- Added to displaying area avatar, total repos and user’s Github link.
+- Created Routes, hamburger menu, Blog, Contact, Privacy, Help etc. pages.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# How to Use This Application
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- In the project directory, you can run `npm start` in the terminal.
+- Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Type the any Github username to the input area.
+- You can click or touch your ‘Enter’ button.
+- The page will reload when you make changes.
+- If you want to test the app run `npm test` in the terminal.

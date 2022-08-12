@@ -1,6 +1,6 @@
 import * as React from "react";
 import { AppBar, Box, Link, Typography } from "@mui/material";
-import ElectricBoltRoundedIcon from "@mui/icons-material/ElectricBoltRounded";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Footer = () => {
   return (
@@ -22,7 +22,12 @@ const Footer = () => {
             alignItems: "center",
           }}
         >
-          <ElectricBoltRoundedIcon sx={{ color: "red" }} />
+          <GitHubIcon
+            sx={{
+              mr: 1,
+              color: "black",
+            }}
+          />
           <Link
             variant="h5"
             href="/"
@@ -67,7 +72,7 @@ const Footer = () => {
           >
             <Link
               variant="p"
-              href="/"
+              href="/termsConditions"
               underline="none"
               sx={{
                 mr: 2,
@@ -82,7 +87,7 @@ const Footer = () => {
             </Link>
             <Link
               variant="p"
-              href="/"
+              href="/privacy"
               underline="none"
               sx={{
                 mr: 2,
@@ -97,7 +102,7 @@ const Footer = () => {
             </Link>
             <Link
               variant="p"
-              href="/"
+              href="/help"
               underline="none"
               sx={{
                 mr: 2,
