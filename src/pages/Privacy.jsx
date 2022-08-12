@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Box, Typography, Grid, Stack } from "@mui/material";
+import { Box, Typography, Grid } from "@mui/material";
 import { purple } from "@mui/material/colors";
 
 const Privacy = () => {

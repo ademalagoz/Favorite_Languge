@@ -31,7 +31,7 @@ const Navbar = () => {
   const handleOpen = () => {
     setOpen(true);
   };
-
+console.log(open);
   return (
     <AppBar
       position="static"

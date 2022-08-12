@@ -54,7 +54,7 @@ const Home = () => {
       setError(true);
     }
   };
-
+  console.log(error);
 
   return (
     <Search

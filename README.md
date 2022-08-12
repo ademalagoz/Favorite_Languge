@@ -41,7 +41,7 @@ Once you type any Github username, you are able to see what the favourite progra
 - Also we get and showed the avatar, total repository and Github link of that user.
   -We wrote a test for any error. Tested in different stories with using Testing-library/react and Jest ```
 
-## **Extra**
+# **Extra**
 
 - Navbar, Footer, logo and different pages added.
 - This app is created as Full Responsive by using MUI library.
@@ -50,9 +50,10 @@ Once you type any Github username, you are able to see what the favourite progra
 
 # How to Use This Application
 
-- In the project directory, you can run `npm start` in the terminal.
+- In the project directory, run `npm install` in the terminal.
+- You can run `npm start` in the terminal.
 - Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 - Type the any Github username to the input area.
 - You can click or touch your ‘Enter’ button.
 - The page will reload when you make changes.
-- If you want to test the app run `npm test` in the terminal.
+- If you want to test the open the test folder and app run `npm test` in search.spec.jsx file.
