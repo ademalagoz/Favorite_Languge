@@ -1,7 +1,7 @@
 # About Programme
 
-This application finds any Github user’s favourite programming language.
-Once you type any Github username, you are able to see what the favourite programming language is, the Github user's profile photo, total repositories and user's Github link.
+- This application finds any Github user’s favourite programming language.
+- Once you type any Github username, you are able to see what the favourite programming language is, the Github user's profile photo, total repositories and user's Github link.
 
 # **Technologies**
 
@@ -21,6 +21,7 @@ Once you type any Github username, you are able to see what the favourite progra
 - Use React Hooks useState to store data and props for transferring.
 - Finally, get the favourite language and more details.
 - Write a test for any error.
+- Push to Github and Deploy on Netlify.
 
 # **Challenges**
 
@@ -39,7 +40,8 @@ Once you type any Github username, you are able to see what the favourite progra
 - Used React Hooks useState to store data and props for transferring.
 - Finally, get the favourite language and more details.
 - Also we get and showed the avatar, total repository and Github link of that user.
-  -We wrote a test for any error. Tested in different stories with using Testing-library/react and Jest ```
+- We wrote a test for any error. Tested in different stories with using Testing-library/react and Jest.
+- Pushed to Github and Deploy on Netlify.(https://favoritelang.netlify.app/)
 
 # **Extra**
 
